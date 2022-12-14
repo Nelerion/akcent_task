@@ -49,6 +49,4 @@ const FilterProduct = () => {
 };
 
 export default FilterProduct;
-function cleanFilters(): any {
-  throw new Error("Function not implemented.");
-}
+

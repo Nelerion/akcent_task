@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import product from "../../assets/products.json";
-import { useAppDispatch, useAppSelector } from "../../store/slices/hooks";
+import { useAppDispatch } from "../../store/slices/hooks";
 import { getProduct } from "../../store/slices/productSlice";
 import { PaginatedItems } from "./paginate";
 const ListProduct = () => {

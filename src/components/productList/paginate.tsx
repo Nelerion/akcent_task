@@ -41,12 +41,8 @@ export function PaginatedItems({ itemsPerPage }: any) {
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = filter.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(filter.length / itemsPerPage);
-
   const handlePageClick = (event: { selected: number }) => {
     const newOffset = (event.selected * itemsPerPage) % filter.length;
-    console.log(
-      `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
 

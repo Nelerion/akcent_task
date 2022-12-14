@@ -61,7 +61,6 @@ const Busket = () => {
     dispatch(cleanBusket());
     return navigate("/");
   };
-  console.log(busket);
   
   return (
     <div className="container">
